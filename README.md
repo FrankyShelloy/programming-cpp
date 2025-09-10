@@ -1,4 +1,3 @@
-# programming-cpp
 # C++ Programming Lab Repository
 
 This repository contains a collection of laboratory works for a C programming course. Each lab is organized in its own directory, named `lab0`, `lab1`, etc., and includes source code, build configuration, and documentation specific to that lab.
