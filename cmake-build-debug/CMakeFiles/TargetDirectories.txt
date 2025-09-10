@@ -1,5 +1,0 @@
-/home/frankyshelloy/CLionProjects/programming-cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/frankyshelloy/CLionProjects/programming-cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/frankyshelloy/CLionProjects/programming-cpp/cmake-build-debug/lab0/CMakeFiles/lab0.dir
-/home/frankyshelloy/CLionProjects/programming-cpp/cmake-build-debug/lab0/CMakeFiles/edit_cache.dir
-/home/frankyshelloy/CLionProjects/programming-cpp/cmake-build-debug/lab0/CMakeFiles/rebuild_cache.dir
