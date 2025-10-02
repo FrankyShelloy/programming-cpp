@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include "text_processor.h"
 #include "word_counter.h"
 #include "file_handler.h"
@@ -10,15 +11,20 @@ int main(int argc, char *argv[]) {
     }
 
     try {
-
-        std::string content = FileHandler::ReadFile(argv[1]);
+        std::ifstream input_file(argv[1]);
+        if (!input_file.is_open()) {
+            throw std::runtime_error("Cannot open file: " + std::string(argv[1]));
+        }
 
         TextProcessor processor;
-        std::string clean_text = processor.Process(content);
-
-
         WordCounter counter;
-        counter.CountWords(clean_text);
+        std::string line;
+
+        while (std::getline(input_file, line)) {
+            std::string clean_line = processor.Process(line);
+            counter.CountWords(clean_line);
+        }
+        input_file.close();
 
 
         auto sorted_words = counter.GetSortedWords();

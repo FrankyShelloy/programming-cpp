@@ -3,7 +3,6 @@
 #include <algorithm>
 
 void WordCounter::CountWords(const std::string& text) {
-    word_frequencies_.clear();
     std::istringstream stream(text);
     std::string word;
 
