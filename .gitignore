@@ -47,3 +47,5 @@ out/
 bin/
 obj/
 .idea/
+*.txt
+*.csv
