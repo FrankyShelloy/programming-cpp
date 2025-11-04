@@ -2,7 +2,6 @@
 #define PRIORITY_QUEUE_H
 
 #include <vector>
-#include <stdexcept>
 #include <iostream>
 #include <cstddef>
 

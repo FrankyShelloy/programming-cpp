@@ -14,11 +14,14 @@ PriorityQueue::PriorityQueue(bool max_heap) {
 PriorityQueue::PriorityQueue(const std::vector<int>& data, bool max_heap) {
   heap_ = data;
   is_max_heap_ = max_heap;
+
   if (heap_.size() == 0) {
     return;
   }
+
   size_t start_index = (heap_.size() - 2) / 2;
   size_t i = start_index;
+
   while (true) {
     sift_down(i);
     if (i == 0) {
