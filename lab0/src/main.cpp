@@ -20,7 +20,9 @@ int main(int argc, char *argv[]) {
         WordCounter counter;
         std::string line;
 
-        while (std::getline(input_file, line)) {
+        while (std::getline(input_file, line)) { if (!input_file.is_open()) {
+            throw std::runtime_error("Cannot open file: " + std::string(argv[1]));
+        }
             std::string clean_line = processor.Process(line);
             counter.CountWords(clean_line);
         }
